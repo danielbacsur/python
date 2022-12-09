@@ -21,4 +21,8 @@ while True:
     for i in line:
         if i == "#":
             breakk = False
-    print("nzertel")
+    print(line)
+    
+    if breakk:
+        print("nyertel")
+        break
