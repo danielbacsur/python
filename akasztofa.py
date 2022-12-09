@@ -6,10 +6,10 @@ szavak = txt.splitlines()
 szo = random.choice(szavak)
 kitalalt = []
 
-print(szo)
+print("💡\t", szo)
 
 while True:
-    tipp = input("💡 ")
+    tipp = input("✏️\t  ")
     kitalalt.append(tipp)
 
     valasz = ""
@@ -20,8 +20,9 @@ while True:
         else:
             valasz += "#"
 
-    if not "#" in valasz:
-        print("Kitaláltad! ❤️")
+    if "#" in valasz:
+        print("👌\t", valasz)
+    else:
+        print("❤️\t ", valasz.capitalize(), ". Kitaláltad!")
         break
 
-    print(valasz)
