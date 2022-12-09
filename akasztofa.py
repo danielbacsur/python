@@ -1,28 +1,27 @@
+import requests
 import random
-ered = ['alma', 'korte', 'haha']
-szo = random.choice(ered)
-print(szo)
 
+txt = requests.get("https://python.danielbacsur.com/szavak.txt").text
+szavak = txt.splitlines()
+szo = random.choice(szavak)
 kitalalt = []
 
+print(szo)
+
 while True:
-    b = input(">> ")[0]
-    if b in szo:
-        kitalalt.append(b)
-    
-    line = ""
-    for i in szo:
-        if i in kitalalt:
-            line += i
+    tipp = input("💡 ")
+    kitalalt.append(tipp)
+
+    valasz = ""
+
+    for betu in szo:
+        if betu in kitalalt:
+            valasz += betu
         else:
-            line += "#"
-    
-    breakk = True
-    for i in line:
-        if i == "#":
-            breakk = False
-    print(line)
-    
-    if breakk:
-        print("nyertel")
+            valasz += "#"
+
+    if not "#" in valasz:
+        print("Kitaláltad! ❤️")
         break
+
+    print(valasz)
