@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 
 options = Options()
-options.headless = True
+options.headless = False
 driver = webdriver.Firefox(options=options, service_log_path=os.devnull)
 driver.get("https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/Hungarian_wordlist")
 
