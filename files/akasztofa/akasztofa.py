@@ -8,7 +8,7 @@ szo = random.choice(szavak)
 kitalalt = []
 
 # Valasztott szo kiirasa *csak segitseg keppen*
-print("💡\t", szo)
+# print("💡\t", szo)
 
 # Kerdezo vegtelen ciklus
 while True:

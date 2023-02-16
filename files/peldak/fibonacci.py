@@ -3,5 +3,5 @@ def fibo(n):
         return n
     return fibo(n-1) + fibo(n-2)
 
-for i in range(20):
+for i in range(999999):
     print(i, fibo(i))
