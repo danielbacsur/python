@@ -7,6 +7,7 @@ szavak = txt.splitlines()
 szo = random.choice(szavak)
 kitalalt = []
 
+
 # Valasztott szo kiirasa *csak segitseg keppen*
 # print("💡\t", szo)
 
