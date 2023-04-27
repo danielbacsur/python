@@ -17,20 +17,15 @@ for karakter in bemenet:
     elif karakter == "N":
         n += 1
 
-# print(bemenet, e, d, k, n)
 x = k-n
 y = e-d
-print(x, y)
-
-x = abs(x)
-y = abs(y)
 
 if x > 0:
-    print("K" * x, end="")
+    print("K" * abs(x), end="")
 else:
-    print("N" * x, end="")
+    print("N" * abs(x), end="")
 
 if y > 0:
-    print("D" * y, end="")
+    print("E" * abs(y), end="")
 else:
-    print("E" * y, end="")
+    print("D" * abs(y), end="")
