@@ -1,7 +1,17 @@
 import random
 
 val = int(input("Hány alkalommal legyen dobás? "))
-lst = [[random.randint(1, 6) for _ in range(3)] for _ in range(val)]
+# lst = [[random.randint(1, 6) for _ in range(3)] for _ in range(val)]
+lst = []
+
+for _ in range(val):
+    tmp = []
+    for _ in range(3):
+        tmp.append(random.randint(1, 6))
+    lst.append(tmp)
+
+print(lst)
+
 
 anni, panni = 0, 0
 

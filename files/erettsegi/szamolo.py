@@ -14,7 +14,8 @@ db, ok = 0, 0
 
 while ok < 5:
     db += 1
-    a, b = random.randint(1, 10), random.randint(1, 10)
+    a = random.randint(1, 10)
+    b = random.randint(1, 10)
     c, d = 0, 0
 
     if valasz == 1:

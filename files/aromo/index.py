@@ -1,4 +1,4 @@
-import re
+# EZ A FILE NEM TARTOZIK A SZAKKORON TANULTAK KOZE !!! 
 import os
 import time
 import getpass
