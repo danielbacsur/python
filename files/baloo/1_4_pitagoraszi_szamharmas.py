@@ -6,9 +6,12 @@ lst = []
 
 for i in range(1, val // 5 + 1):
     szharmas = [3 * i, 4 * i, 5 * i]  # Hozzaadjuk az elso variaciot
-    lst.append(str(szharmas))
+    lst.append(" ".join(szharmas))
 
     szharmas = [4 * i, 3 * i, 5 * i]  # Hozzaadjuk a masodik variaciot
-    lst.append(str(szharmas))
+    lst.append(" ".join(szharmas))
 
 print("; ".join(lst))  # Eredmeny kiirasa, pontosvesszovel elvalasztva
+
+
+
