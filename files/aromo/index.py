@@ -57,6 +57,6 @@ for i, n in enumerate(list(grades.keys())):
     print(f"{round(summed[i], 2)}".ljust(4), end=" | ")
     print(" ".join([str(x) for x in list(grades.values())[i]]))
 
-print("Teljes Átlag:".ljust(36), sum(summed) / len(summed))
+print("Teljes Átlag:".ljust(35), sum(summed) / len(summed))
 
 input("\nNyomj entert a bezarashoz... ")
