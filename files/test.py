@@ -1,5 +1,1 @@
-a = 12
-
-b = 25
-
-print(f"""Ennyi alma van: {a + b}""")
+print("A legkisebb:", min([int(input(f'Ird be az elso {["elso", "masodik", "harmadik"][i]} szamot: ')) for i in range(3)]))
