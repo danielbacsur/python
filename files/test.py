@@ -1,1 +1,3 @@
-print("A legkisebb:", min([int(input(f'Ird be az elso {["elso", "masodik", "harmadik"][i]} szamot: ')) for i in range(3)]))
+print(sum([2,
+2, 2, 2, 4, 4, 3, 2, 2, 3, 3, 4, 4, 3, 2,
+2]))
